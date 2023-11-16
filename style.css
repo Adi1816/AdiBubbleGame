@@ -16,7 +16,7 @@ html, body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.98rem 9%;
+    padding: 1.5rem 8%;
     background: rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px);
     /* display: flex;
