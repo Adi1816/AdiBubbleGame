@@ -1,0 +1,121 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.98rem 9%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    z-index: 100;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #670b0b;
+    font-weight: 800;
+    cursor: default;
+}
+
+#main{
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f7cac9;
+}
+
+#panel{
+    overflow: hidden;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    background-color: #fbfbfb;
+
+}
+
+#paneltop{
+    padding: 0px 28%;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background-color: #c94c4c;
+}
+
+.element{
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.h3{
+    background-color: #fff;
+}
+
+.box{
+    font-size: 17.5px;
+    font-weight: 600;
+    padding: 10px 17px;
+    color: #a33636;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#panelbtm{
+    display: flex; /*bubbles agal bagal aa sake*/
+    flex-wrap: wrap; /*bubble neeche bhi jaa sake*/
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: #fff;
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #c94c4c;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background-color: #a33636;
+}
