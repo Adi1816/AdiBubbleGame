@@ -1,7 +1,7 @@
 window.alert("Welcome to Adi's Bubble Game");
-let instructions = `Instructions: You have to press the bubble corresponding to the number being displayed beside 'Hit', note that pressing the wrong bubble will decrease your Score.`;
+var instructions = `Instructions: You have to press the bubble corresponding to the number being displayed beside 'Hit', note that pressing the wrong bubble will decrease your Score.`;
 window.alert(instructions);
-let timer = prompt("How long do you want to play this game (in seconds)");
+var timer = prompt("How long do you want to play this game (in seconds)");
 timer++;
 
 function MakeBubble(){
@@ -13,7 +13,6 @@ document.querySelector("#panelbtm").innerHTML=drop;
 }
 MakeBubble();
 
-// var timer=60;
 function Timeout(){
     var timeInt = setInterval(function(){
         timer-=1;
@@ -34,9 +33,6 @@ function Timeout(){
             else {
                 document.querySelector("#panelbtm").innerHTML= `<center><h1>Can do better!<br>Your Score was ${score} 🎉</center></h1>`;
             }
-            // document.querySelector("#panelbtm").innerHTML= `<h1>Your Score was: ${score}</h1>`;
-            // document.querySelector("#panelbtm").innerHTML= `<h1>Well Played Champ!</h1>`;
-
         }
     }, 1000);
 }
@@ -64,7 +60,6 @@ function DecreaseScore(){
 document.querySelector("#panelbtm").
 addEventListener('click', function(dets){
     var clickednum = (Number(dets.target.textContent));
-    // alert(clickednum);
     if(hitnum==clickednum){
         IncreaseScore();
         NewHit();
