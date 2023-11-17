@@ -19,9 +19,9 @@ html, body{
     padding: 1.5rem 8%;
     background: rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px);
-    /* display: flex;
+    /* display: flex; */
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
     z-index: 100;
 }
 
@@ -88,6 +88,7 @@ html, body{
     color: #a33636;
     background-color: #fff;
     border-radius: 5px;
+
 }
 
 #panelbtm{
@@ -113,9 +114,11 @@ html, body{
     background-color: #c94c4c;
     font-weight: 600;
     font-size: 19px;
+    transition: .3s ease;
 }
 
 .bubble:hover{
     cursor: pointer;
     background-color: #a33636;
+    box-shadow: 0 0 1rem rgb(255, 21, 64);
 }
