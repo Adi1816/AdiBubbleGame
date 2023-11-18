@@ -21,13 +21,16 @@ function Timeout(){
         }
         else{
             clearInterval(timeInt);
-            if(score>=300){
-                document.querySelector("#panelbtm").innerHTML= `<center><h1>Well Played Champ!<br>Your Score was ${score} 🎉</center></h1>`;
+            if(score>=timer*6){
+                document.querySelector("#panelbtm").innerHTML= `<center><h1>Outstanding Champ!<br>Your Score was ${score} 🎉</center></h1>`;
             }
-            else if(score>=200){
+            else if(score>=timer*5){
                 document.querySelector("#panelbtm").innerHTML= `<center><h1>A Great Game!<br>Your Score was ${score} 🎉</center></h1>`;
             }
-            else if(score>=130){
+            else if(score>=timer*3){
+                document.querySelector("#panelbtm").innerHTML= `<center><h1>A Great Game!<br>Your Score was ${score} 🎉</center></h1>`;
+            }
+            else if(score>=timer*2){
                 document.querySelector("#panelbtm").innerHTML= `<center><h1>Decent Play!<br>Your Score was ${score} 🎉</center></h1>`;
             }
             else {
