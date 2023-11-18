@@ -2,6 +2,7 @@ window.alert("Welcome to Adi's Bubble Game");
 var instructions = `Instructions: You have to press the bubble corresponding to the number being displayed beside 'Hit', note that pressing the wrong bubble will decrease your Score.`;
 window.alert(instructions);
 var timer = prompt("How long do you want to play this game (in seconds)");
+var pointTimer=timer;
 timer++;
 
 function MakeBubble(){
@@ -21,16 +22,16 @@ function Timeout(){
         }
         else{
             clearInterval(timeInt);
-            if(score>=timer*6){
+            if(score>=pointTimer*6){
                 document.querySelector("#panelbtm").innerHTML= `<center><h1>Outstanding Champ!<br>Your Score was ${score} 🎉</center></h1>`;
             }
-            else if(score>=timer*5){
+            else if(score>=pointTimer*5){
+                document.querySelector("#panelbtm").innerHTML= `<center><h1>Well Played Champ!<br>Your Score was ${score} 🎉</center></h1>`;
+            }
+            else if(score>=pointTimer*3){
                 document.querySelector("#panelbtm").innerHTML= `<center><h1>A Great Game!<br>Your Score was ${score} 🎉</center></h1>`;
             }
-            else if(score>=timer*3){
-                document.querySelector("#panelbtm").innerHTML= `<center><h1>A Great Game!<br>Your Score was ${score} 🎉</center></h1>`;
-            }
-            else if(score>=timer*2){
+            else if(score>=pointTimer*2){
                 document.querySelector("#panelbtm").innerHTML= `<center><h1>Decent Play!<br>Your Score was ${score} 🎉</center></h1>`;
             }
             else {
